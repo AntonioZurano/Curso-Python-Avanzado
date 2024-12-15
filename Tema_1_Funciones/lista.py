@@ -6,7 +6,7 @@ vacía.'''
 def suma_lista(lista):
     """Calcula la suma de todos los elementos de una lista de enteros."""
     # Parámetros:
-    #    lista: Es una lista de enteros.
+    #    lista: Es una lista de numeros enteros.
     # Devuelve:
     #    La suma de todos los elementos de la lista."""
     
