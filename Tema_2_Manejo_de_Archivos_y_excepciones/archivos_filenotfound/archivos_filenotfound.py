@@ -1,4 +1,4 @@
-# Comporbar que nuestros archivos estan disponibles
+# Comprobar que nuestros archivos estan disponibles
 # Si lo estan imprimimos el contenido de los archivos
 
 
@@ -19,3 +19,5 @@ for filename in filenames:
     # otra forma de manejar el error
     #    print(f"El archivo {filename} no se encuentra disponible.")
     #    print("\n")
+
+print("Proceso terminado")
