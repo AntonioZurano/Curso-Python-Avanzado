@@ -7,12 +7,14 @@ def contar_apariciones(filename, palabra):
     """ Contar las apariciones de una palabra 
         en un archivo de texto """
     try:
+        # abrimos el archivo en modo lectura
         with open(filename, "r") as file:
             # guardamos el contenido del archivo en una variable
             texto = file.read()
             # contamos el numero de apariciones de la palabra
             count = texto.count(palabra)
             return count
+        # si hay un error al abrir el archivo
     except FileNotFoundError:
         print(f"El archivo {filename} no se encuentra disponible.")
         return 0
@@ -22,7 +24,7 @@ def contar_apariciones(filename, palabra):
 
     # Ejemplo de uso
 filename = "texto.txt"
-palabra_contar = "Clara"
+palabra_contar = "Python"
     
 ocurrencias = contar_apariciones(filename, palabra_contar)
     
