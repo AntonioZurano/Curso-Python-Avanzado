@@ -5,8 +5,11 @@
 def buscar_en_pi(filename, string):
     """ Busca la fecha de nacimiento dentro de los primeros 10000 decimales de pi """
     try:
+
+        # Abrir el archivo y leer su contenido
         with open(filename, "r") as file:
             digitos = file.read()
+            # Buscar la cadena en los decimales de pi
             posicion = digitos.find(string)
             
             if posicion == -1:
@@ -22,7 +25,9 @@ def buscar_en_pi(filename, string):
 
 
 # Llamamos a la función buscar_en_pi
-resultado = buscar_en_pi("pi_10000.txt", "1782")
+filename= "pi_10000.txt"
+fecha = "1998"
+resultado = buscar_en_pi(filename, fecha)
 
 if resultado is None:
     print("La fecha de nacimiento no se encuentra en los primeros 10000 decimales de pi.")
